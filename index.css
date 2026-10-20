@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://googleapis.com');
 @import "tailwindcss";
 
 @theme {
@@ -18,23 +18,24 @@
   }
 }
 
-/* Base Styles (Tailwind v4 Native CSS) */
+/* Base Styles (Tailwind v4 Native CSS Mapping) */
 html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
 body {
-  background-color: var(--color-brand-black);
+  /* FIXED: Changed utility classes to native variables so the browser reads the dark theme instantly */
+  background-color: #0D0D0D;
   color: #ffffff;
-  font-family: var(--font-sans);
-  font-feature-settings: normal;
-  font-variation-settings: normal;
+  font-family: "Plus Jakarta Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-/* Utility Styles (Tailwind v4 Native Utilities) */
+/* Custom Component Layout Utilities */
 .glow-red {
   box-shadow: 0 0 20px var(--color-brand-red-glow);
 }
