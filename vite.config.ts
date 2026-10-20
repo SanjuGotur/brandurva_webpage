@@ -1,9 +1,11 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite' // 👈 ADD THIS IMPORT
 
-// https://vite.dev
 export default defineConfig({
-  plugins: [react()],
-  // Ensures URLs match your exact GitHub repository subfolder path
-  base: '/brandurva_webpage/', 
+  plugins: [
+    react(),
+    tailwindcss() // 👈 ADD THIS TO THE PLUGINS ARRAY
+  ],
+  base: '/brandurva_webpage/',
 })
