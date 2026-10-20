@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  // ⚠️ Make sure this matches your exact repository name on GitHub
-  base: '/brandurva_webpage/', 
+  // 👇 CHANGE THIS LINE FOR YOUR CUSTOM DOMAIN
+  base: '/', 
 })
