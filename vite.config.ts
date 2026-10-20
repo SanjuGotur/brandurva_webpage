@@ -1,7 +1,7 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/react-refresh' // or '@vitejs/plugin-react' depending on your framework
+import react from '@vitejs/plugin-react' // 👈 CHANGED THIS LINE
 
 export default defineConfig({
   plugins: [react()],
-  base: '/brandurva_webpage-main/', // 👈 ADD THIS LINE (use your exact repository name)
+  base: '/brandurva_webpage-main/', // Ensures URLs match your GitHub repository name
 })
