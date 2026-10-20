@@ -42,7 +42,7 @@ import {
   VolumeX
 } from 'lucide-react';
 import { useForm } from 'react-hook-form';
-import { cn } from './lib/utils';
+import { cn } from './utils';
 
 // --- Components ---
 
