@@ -8,6 +8,6 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-  // 👇 CHANGE THIS LINE FOR YOUR CUSTOM DOMAIN
-  base: '/', 
+  // 👇 MAKE SURE THIS HAS BOTH SLASHES SURROUNDING THE REPO NAME
+  base: '/brandurva_webpage/', 
 })
